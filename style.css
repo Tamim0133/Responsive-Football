@@ -123,3 +123,30 @@ section > div > img:hover {
   height: 256px;
   width: 300px;
 }
+/*----------------------------------------
+    Styling so called the Sub-Middle Part
+------------------------------------------- */
+.sub-middle > img {
+    position: absolute;
+    width: 567px;
+    height: 427px;
+    left: 717px;
+    top: 2889px;
+}
+.highlight-details{
+    flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+position: absolute;
+width: 466px;
+height: 309px;
+left: 182px;
+top: 2948px;
+}
+#watch-highlight{
+    padding: 2%;
+    width: 173px;
+    text-align: center;
+    margin-top: 24px;
+}
+
