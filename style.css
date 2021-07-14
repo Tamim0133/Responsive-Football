@@ -70,7 +70,7 @@ section > div > img {
 }
 section > div > img:hover {
   transform: rotateY(360deg);
-  -webkit-transition: 4s ease-in-out;
+  transition: 4s ease-in-out;
   cursor: pointer;
 }
 .heading-text {
@@ -127,26 +127,127 @@ section > div > img:hover {
     Styling so called the Sub-Middle Part
 ------------------------------------------- */
 .sub-middle > img {
+  position: absolute;
+  width: 567px;
+  height: 427px;
+  left: 717px;
+  top: 2890px;
+  margin-top: 100px;
+}
+.highlight-details {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 100px;
+  padding: 0px;
+  position: absolute;
+  width: 466px;
+  height: 309px;
+  left: 182px;
+  top: 2948px;
+}
+#watch-highlight {
+  padding: 2%;
+  width: 173px;
+  text-align: center;
+  margin-top: 24px;
+}
+/*-----------------------
+  Additional Part-one
+---------------------- */
+.additional-one  {
+    display: flex;
+    border-left: 15px solid;
+    border-image:linear-gradient(#FF61D2 , #FE9090);
+    border-image-slice: 1;
+     border-top-right-radius: 25px;
+   
+
+    box-shadow: 10px 10px 10px 10px gray;
     position: absolute;
-    width: 567px;
-    height: 427px;
-    left: 717px;
-    top: 2889px;
+    margin-top: 550px;
+    margin-left: 150px;
+    padding: 10px;
+    width: 1000px; height:300px;
+    text-align: justify;
 }
-.highlight-details{
-    flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-position: absolute;
-width: 466px;
-height: 309px;
-left: 182px;
-top: 2948px;
+.host-info {
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 20px;
 }
-#watch-highlight{
-    padding: 2%;
-    width: 173px;
-    text-align: center;
-    margin-top: 24px;
+.host-pic img{
+    width: 400px;
+    height: 260px;
+    position: static;
+    margin-left: 65px;
+    margin-top: 30px;
+    
 }
 
+/*---------------------------------------------
+             Additional Part TWO- styling
+ ----------------------------------------------- */
+ .additional-two  {
+    display: flex;
+    border-left: 15px solid;
+    border-image:linear-gradient(#009245 , #FCEE21);
+    border-image-slice: 1;
+     border-top-right-radius: 25px;
+   
+
+    box-shadow: 10px 10px 10px 10px gray;
+    position:absolute;
+    margin-top: 1000px;
+    margin-left: 150px;
+    padding: 10px;
+    width: 1000px; height:300px;
+    text-align: justify;
+}
+.winner-info {
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.winner-pic img{
+    width: 400px;
+    height: 260px;
+    position: static;
+    margin-left: 65px;
+    margin-top: 30px;
+    
+}
+
+
+
+/*===============================================
+     Let's add some styles to the footer part 
+============================================== */
+footer {
+   
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  text-align: center;
+  position: absolute;
+  width: 483px;
+  height: 213px;
+  left: 475px;
+  top: 4500px;
+  padding-bottom: 60px;
+}
+.logo-image > img {
+  width: 480px;
+  height: 110px;
+  margin-right: 0%;
+}
+.social-icons {
+  font-size: 25px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.social-icons:hover {
+  cursor: pointer;
+}
