@@ -113,7 +113,7 @@ section > div > img:hover {
   border: 3px light;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
-.player-name {
+.highlight-title {
   font-weight: 700;
   font-size: 48px;
   margin-top: 16px;
