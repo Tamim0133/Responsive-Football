@@ -36,6 +36,7 @@ ul > li {
   width: 135px;
   font-size: 18px;
   color: white;
+  padding: 4%;
 }
 .interactive:hover {
   transform: scale(1.1);
@@ -49,7 +50,7 @@ ul > li {
   background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 }
 #login {
-  padding: 10px 24px;
+  padding: 3;
   text-align: center;
 }
 .top {
@@ -154,77 +155,72 @@ section > div > img:hover {
 /*-----------------------
   Additional Part-one
 ---------------------- */
-.additional-one  {
-    display: flex;
-    border-left: 15px solid;
-    border-image:linear-gradient(#FF61D2 , #FE9090);
-    border-image-slice: 1;
-     border-top-right-radius: 25px;
-   
+.additional-one {
+  display: flex;
+  border-left: 15px solid;
+  border-image: linear-gradient(#ff61d2, #fe9090);
+  border-image-slice: 1;
+  border-top-right-radius: 25px;
 
-    box-shadow: 10px 10px 10px 10px gray;
-    position: absolute;
-    margin-top: 550px;
-    margin-left: 150px;
-    padding: 10px;
-    width: 1000px; height:300px;
-    text-align: justify;
+  box-shadow: 10px 10px 10px 10px gray;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 150px;
+  padding: 10px;
+  width: 1000px;
+  height: 300px;
+  text-align: justify;
 }
 .host-info {
-    width: 500px;
-    margin-left: 30px;
-    margin-top: 20px;
+  width: 500px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
-.host-pic img{
-    width: 400px;
-    height: 260px;
-    position: static;
-    margin-left: 65px;
-    margin-top: 30px;
-    
+.host-pic img {
+  width: 400px;
+  height: 260px;
+  position: static;
+  margin-left: 65px;
+  margin-top: 30px;
 }
 
 /*---------------------------------------------
              Additional Part TWO- styling
  ----------------------------------------------- */
- .additional-two  {
-    display: flex;
-    border-left: 15px solid;
-    border-image:linear-gradient(#009245 , #FCEE21);
-    border-image-slice: 1;
-     border-top-right-radius: 25px;
-   
+.additional-two {
+  display: flex;
+  border-left: 15px solid;
+  border-image: linear-gradient(#009245, #fcee21);
+  border-image-slice: 1;
+  border-top-right-radius: 25px;
 
-    box-shadow: 10px 10px 10px 10px gray;
-    position:absolute;
-    margin-top: 1000px;
-    margin-left: 150px;
-    padding: 10px;
-    width: 1000px; height:300px;
-    text-align: justify;
+  box-shadow: 10px 10px 10px 10px rgba(128, 128, 128, 0.664);
+  position: absolute;
+  margin-top: 1000px;
+  margin-left: 150px;
+  padding: 10px;
+  width: 1000px;
+  height: 300px;
+  text-align: justify;
 }
 .winner-info {
-    width: 500px;
-    margin-left: 30px;
-    margin-top: 20px;
+  width: 500px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
-.winner-pic img{
-    width: 400px;
-    height: 260px;
-    position: static;
-    margin-left: 65px;
-    margin-top: 30px;
-    
+.winner-pic img {
+  width: 400px;
+  height: 260px;
+  position: static;
+  margin-left: 65px;
+  margin-top: 30px;
 }
-
-
 
 /*===============================================
      Let's add some styles to the footer part 
 ============================================== */
 footer {
-   
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -250,4 +246,106 @@ footer {
 }
 .social-icons:hover {
   cursor: pointer;
+}
+/* ------------------------
+    Media query for mobile 
+------------------------- */
+@media (max-width: 688px) {
+ .additional-two,.additional-one{
+    display: none;
+  } 
+.pages-content{display: none;}
+ .top{width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+   
+  
+   
+}
+ #login{position: absolute;
+   width: 80px;
+   height: 35px;
+   overflow: hidden;
+  bottom: 90%;
+   left: 3%;
+   
+ }
+ #watch{ transform:translate(-80%,-505%)
+    
+ }
+ .bannar{
+  width: 329px;
+  height: 259px;
+  left:0%;
+  top: 374px;
+ }
+ .heading-text{
+  position: absolute;
+width: 278px;
+height: 138px;
+padding-left: 4%;  
+margin-top: 0%;
+padding-top: 5%;
+margin-left: 5%;
+font-size: 35px;
+ }
+ .middle{
+  margin-left: 3%;
+  padding-left: 3%;
+  margin-right: 3%;
+  padding-right: 3%;
+ }
+ .players{
+   display: grid;
+   grid-template-columns:repeat(1,1fr);
+
+ }
+ .sub-middle{
+   padding-left: 4%;
+   margin-left: 4%;
+   
+ }
+ .highlight-details{
+
+
+  position: absolute;
+  width: 329px;
+  height: 1450px;
+  left: 15px;
+  top: 7100px;
+  
+ }
+
+ #watch-highlight{
+  position:absolute;
+width: 153px;
+height: 30px;
+left: 15px;
+top: 425px;
+}
+ .sub-middle>img{
+ position: static;
+width: 328px;
+height: 248px;
+left: 16px;
+ transform: translate(0px,360px);
+
+}
+footer{
+  top: 0%;
+  position: static;
+  
+  margin-left: 10%;
+  margin-top: 120px;
+  transform: translate(-100px,300px);
+ 
+}
+ .logo-image>img{
+   width: 80%;
+   height: 70%;
+ }
+
+
+
 }
